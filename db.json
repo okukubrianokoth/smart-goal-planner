@@ -1,15 +1,6 @@
 {
   "goals": [
     {
-      "id": "1",
-      "name": "Travel Fund - Japan",
-      "targetAmount": 5000,
-      "savedAmount": 3200,
-      "category": "Travel",
-      "deadline": "2025-12-31",
-      "createdAt": "2024-01-15"
-    },
-    {
       "id": "2",
       "name": "Emergency Fund",
       "targetAmount": 10000,
@@ -89,6 +80,15 @@
       "category": "Home",
       "deadline": "2025-03-31",
       "createdAt": "2024-05-15"
+    },
+    {
+      "id": "03e4",
+      "name": "sdfghj",
+      "targetAmount": 4545,
+      "category": "xsdfghj",
+      "deadline": "2025-07-31",
+      "savedAmount": 4444,
+      "createdAt": "2025-07-23"
     }
   ]
 }
