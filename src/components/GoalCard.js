@@ -41,8 +41,8 @@ function GoalCard({ goal, onDelete, onEdit }) {
       <p>Category: {category}</p>
       <p>
         Deadline: {deadline} ({daysLeft} days left){" "}
-        {isOverdue && <span style={{color: "red"}}>⚠️ Overdue</span>}
-        {isWarning && !isOverdue && <span style={{color: "orange"}}>⏰ Deadline soon</span>}
+        {isOverdue && <span style={{ color: "red" }}>⚠️ Overdue</span>}
+        {isWarning && !isOverdue && <span style={{ color: "orange" }}>⏰ Deadline soon</span>}
       </p>
       <p>Target: ${targetAmount.toLocaleString()}</p>
       <p>Saved: ${savedAmount.toLocaleString()}</p>
@@ -53,7 +53,7 @@ function GoalCard({ goal, onDelete, onEdit }) {
 
       {isComplete && <p style={{ color: "green" }}>✅ Goal Completed</p>}
 
-      <button onClick={() => onEdit(id)} style={{ marginRight: "10px" }}>
+      <button onClick={() => onEdit(goal)} style={{ marginRight: "10px" }}>
         Edit
       </button>
       <button onClick={() => onDelete(id)}>Delete</button>

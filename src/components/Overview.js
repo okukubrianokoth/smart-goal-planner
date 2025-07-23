@@ -30,8 +30,8 @@ function Overview({ goals }) {
           let warning = "";
 
           if (!isComplete) {
-            if (left < 0) warning = "⚠️ Overdue!";
-            else if (left <= 30) warning = "⚠️ Deadline approaching";
+            if (left < 0) warning = " Overdue!";
+            else if (left <= 30) warning = " Deadline approaching";
           }
 
           return (
