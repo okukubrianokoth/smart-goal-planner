@@ -1,7 +1,7 @@
 import React from "react";
 import GoalCard from "./GoalCard";
 
-function GoalList({ goals, onDeleteGoal, onUpdateGoal }) {
+function GoalList({ goals, deleteGoal, onEdit }) {
   return (
     <section>
       <h2>All Goals</h2>
@@ -13,8 +13,8 @@ function GoalList({ goals, onDeleteGoal, onUpdateGoal }) {
             <GoalCard
               key={goal.id}
               goal={goal}
-              onDelete={onDeleteGoal}
-              onEdit={onUpdateGoal} // ✅ Renamed this from `onUpdate` to `onEdit`
+              onDelete={deleteGoal}
+              onEdit={onEdit}
             />
           ))}
         </div>

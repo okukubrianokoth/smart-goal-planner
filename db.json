@@ -4,7 +4,7 @@
       "id": "2",
       "name": "Emergency Fund",
       "targetAmount": 10000,
-      "savedAmount": 7500,
+      "savedAmount": 10000,
       "category": "Emergency",
       "deadline": "2026-06-30",
       "createdAt": "2023-05-01"
@@ -13,7 +13,7 @@
       "id": "3",
       "name": "New Laptop",
       "targetAmount": 1500,
-      "savedAmount": 1500,
+      "savedAmount": 3500,
       "category": "Electronics",
       "deadline": "2024-07-20",
       "createdAt": "2024-03-10"
@@ -22,7 +22,7 @@
       "id": "4",
       "name": "Down Payment - House",
       "targetAmount": 50000,
-      "savedAmount": 12000,
+      "savedAmount": 52000,
       "category": "Real Estate",
       "deadline": "2027-12-31",
       "createdAt": "2024-02-01"
@@ -40,7 +40,7 @@
       "id": "6",
       "name": "Education Fund",
       "targetAmount": 20000,
-      "savedAmount": 5000,
+      "savedAmount": 20000,
       "category": "Education",
       "deadline": "2028-01-01",
       "createdAt": "2024-04-20"
@@ -58,7 +58,7 @@
       "id": "8",
       "name": "New Phone",
       "targetAmount": 1200,
-      "savedAmount": 0,
+      "savedAmount": 1200,
       "category": "Electronics",
       "deadline": "2025-01-31",
       "createdAt": "2024-07-10"
@@ -76,18 +76,27 @@
       "id": "10",
       "name": "Home Renovation",
       "targetAmount": 7500,
-      "savedAmount": 1000,
+      "savedAmount": 7500,
       "category": "Home",
       "deadline": "2025-03-31",
       "createdAt": "2024-05-15"
     },
     {
-      "id": "03e4",
-      "name": "sdfghj",
-      "targetAmount": 4545,
-      "category": "xsdfghj",
-      "deadline": "2025-07-31",
-      "savedAmount": 4444,
+      "id": "8c78",
+      "name": "Health Fund",
+      "targetAmount": 12000,
+      "category": "Facilities",
+      "deadline": "2025-08-08",
+      "savedAmount": 12000,
+      "createdAt": "2025-07-23"
+    },
+    {
+      "id": "7413",
+      "name": "Health Fund",
+      "targetAmount": 13000,
+      "category": "Facilities",
+      "deadline": "2025-08-08",
+      "savedAmount": 12000,
       "createdAt": "2025-07-23"
     }
   ]
