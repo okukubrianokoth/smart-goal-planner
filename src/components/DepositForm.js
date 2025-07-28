@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-function DepositForm({ goals, onUpdateGoal }) {
+function DepositForm({ goals, onUpdateGoal, apiUrl }) {
   const [selectedGoalId, setSelectedGoalId] = useState("");
   const [depositAmount, setDepositAmount] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const goalToUpdate = goals.find(
@@ -12,28 +13,39 @@ function DepositForm({ goals, onUpdateGoal }) {
     );
     if (!goalToUpdate) return;
 
-    const newAmount = goalToUpdate.savedAmount + Number(depositAmount);
+    const deposit = Number(depositAmount);
+    if (deposit <= 0 || isNaN(deposit)) {
+      alert("Please enter a valid deposit amount.");
+      return;
+    }
 
-    fetch(`http://localhost:3000/goals/${selectedGoalId}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ savedAmount: newAmount }),
-    })
-      .then((res) => res.json())
-      .then((updatedGoal) => {
-        onUpdateGoal(updatedGoal);
-        setDepositAmount("");
-        setSelectedGoalId("");
-      })
-      .catch((err) => {
-        console.error("Failed to deposit:", err);
-        alert("Something went wrong. Please try again.");
+    const newAmount = goalToUpdate.savedAmount + deposit;
+
+    setLoading(true);
+
+    try {
+      const response = await fetch(`${apiUrl}/${selectedGoalId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ savedAmount: newAmount }),
       });
-  }
+
+      if (!response.ok) throw new Error("Server error");
+
+      const updatedGoal = await response.json();
+      onUpdateGoal(updatedGoal);
+      setDepositAmount("");
+      setSelectedGoalId("");
+    } catch (error) {
+      console.error("Failed to deposit:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div>
-      <h2>Make a Deposit</h2>
       <form onSubmit={handleSubmit}>
         <select
           value={selectedGoalId}
@@ -57,8 +69,8 @@ function DepositForm({ goals, onUpdateGoal }) {
           min="1"
         />
 
-        <button type="submit" disabled={!selectedGoalId || depositAmount <= 0}>
-          Deposit
+        <button type="submit" disabled={!selectedGoalId || depositAmount <= 0 || loading}>
+          {loading ? "Depositing..." : "Deposit"}
         </button>
       </form>
     </div>

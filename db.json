@@ -1,19 +1,10 @@
 {
   "goals": [
     {
-      "id": "1",
-      "name": "Travel Fund - Japan",
-      "targetAmount": 5000,
-      "savedAmount": 3200,
-      "category": "Travel",
-      "deadline": "2025-12-31",
-      "createdAt": "2024-01-15"
-    },
-    {
       "id": "2",
       "name": "Emergency Fund",
       "targetAmount": 10000,
-      "savedAmount": 7500,
+      "savedAmount": 10000,
       "category": "Emergency",
       "deadline": "2026-06-30",
       "createdAt": "2023-05-01"
@@ -85,28 +76,28 @@
       "id": "10",
       "name": "Home Renovation",
       "targetAmount": 7500,
-      "savedAmount": 1000,
+      "savedAmount": 7500,
       "category": "Home",
       "deadline": "2025-03-31",
       "createdAt": "2024-05-15"
     },
     {
-      "id": "8c78",
+      "id": "d8f9",
       "name": "Health Fund",
-      "targetAmount": 12000,
+      "targetAmount": 13000,
       "category": "Facilities",
       "deadline": "2025-08-08",
-      "savedAmount": 12000,
-      "createdAt": "2025-07-23"
+      "savedAmount": 13000,
+      "createdAt": "2025-07-28"
     },
     {
-      "id": "7413",
-      "name": "Health Fund",
-      "targetAmount": 12000,
-      "category": "Facilities",
-      "deadline": "2025-08-08",
-      "savedAmount": 0,
-      "createdAt": "2025-07-23"
+      "id": "2492",
+      "name": "dtfyguhjikl",
+      "targetAmount": 4567,
+      "category": "dtfyguhijk",
+      "deadline": "2025-07-31",
+      "savedAmount": 2134,
+      "createdAt": "2025-07-28"
     }
   ]
 }
