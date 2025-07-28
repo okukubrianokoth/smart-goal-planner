@@ -1,3 +1,73 @@
+#  Smart Goal Planner
+
+A React-based financial goal tracking application that helps users plan, monitor, and manage their savings toward personal goals — like buying a house, saving for retirement, or affording a new gadget.
+
+##  Features
+
+-  Add, edit, and delete custom savings goals
+- 📊 Visual progress bars to track savings progress
+-  Deadline monitoring with overdue alerts
+-  Mark goals as completed
+-  Persistent data using JSON Server (mock backend)
+-  Categories for better goal organization (e.g., Education, Health, Emergency)
+-  Overview dashboard for total savings and upcoming deadlines
+
+##  Tech Stack
+
+- **Frontend:** React, CSS
+- **Backend:** JSON Server (mock API on port `3002`)
+- **Icons:** React Icons
+- **State Management:** React hooks (`useState`, `useEffect`)
+- **Storage:** Local component state with persistent backend (JSON Server)
+
+##  Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/okukubrianokoth/smart-goal-planner/main/screenshots/overview.png)
+
+*(Add more screenshots under a `screenshots/` folder in the repo)*
+
+---
+##  Future Enhancements
+
+-  Add user authentication to support multiple users
+- ☁ Switch from JSON Server to cloud-based database (e.g., Firebase, Supabase)
+-  Improve responsive design for mobile and tablet views
+-  Add notifications or reminders for upcoming goal deadlines
+-  Include data visualization (charts for savings over time)
+-  Support for goal tagging and filtering
+-  Export goals to PDF or CSV
+
+##  Contributing
+
+Contributions, issues and feature requests are welcome!
+
+1. Fork the project
+2. Create your feature branch: `git checkout -b feature/my-feature`
+3. Commit your changes: `git commit -m "Add some feature"`
+4. Push to the branch: `git push origin feature/my-feature`
+5. Open a pull request
+
+Please open an issue first to discuss any major changes.
+
+##  License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+##  Author
+
+**Brian Okuku**  
+GitHub: [@okukubrianokoth](https://github.com/okukubrianokoth)  
+Email: okukubrianokoth@gmail.com *(replace if needed)*
+
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/okukubrianokoth/smart-goal-planner.git
+cd smart-goal-planner
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
